@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bonz-ai/rooms</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <img class="header__logo" src="../assets/logo/bonz.ai-logo-black-portrait-full.png" alt="Bonz.Ai logo">
+  </header>
+
+  <div class="wrapper">
+
+    <nav class="navigation">
+      <a class="navigation__link--item" href="../index.html">Home</a>
+      <a class="navigation__link--item" href="../Facilities/facilities.html">Facilities</a>
+      <a class="navigation__link--item" href="../Rooms/rooms.html">Rooms</a>
+      <a class="navigation__link--item" href="../Order-Now/order.html">Order Now</a>
+    </nav>
+
+    <!-- Detta har jag använt mig utav när det kommer till hamburgarmenyn.
+         Kom inte ihåg allt så fick gå in och kolla hur vi hade gjort med Jesper på lektionen.
+         https://github.com/AdreanRodriguez/hamburger -->
+
+    <span class="hamburger">
+      <nav>
+        <input type="checkbox" class="burger" id="burger">
+        <label class="burger-btn" for="burger">
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li class="menu-item"><a href="../index.html">Home</a></li>
+          <li class="menu-item"><a href="../Facilities/facilities.html">Facilities</a></li>
+          <li class="menu-item"><a href="../Rooms/rooms.html">Rooms</a></li>
+          <li class="menu-item"><a href="../Order-Now/order.html">Order Now</a></li>
+        </ul>
+      </nav>
+      <span class="page"></span>
+    </span>
+
+    <main class="main__container--rooms">
+
+    <!-- Jag använder mig utav (--i) style-attributet för att det ser mer semantiskt 
+         rätt ut istället för att använda mig utav data attribut (data-i) så du inte tror jag har
+         kopierat rakt av. -->
+
+      <section class="main__rooms--gallery">
+        <span class="main__rooms--item" style="--i:1"> <img src="../assets/img/01-day.jpg" alt=""> </span>
+        <span class="main__rooms--item" style="--i:2"> <img src="../assets/img/02-day.jpg" alt=""> </span>
+        <span class="main__rooms--item" style="--i:3"> <img src="../assets/img/03-day.jpg" alt=""> </span>
+        <span class="main__rooms--item" style="--i:4"> <img src="../assets/img/04-day.jpg" alt=""> </span>
+        <span class="main__rooms--item" style="--i:5"> <img src="../assets/img/05-day.jpg" alt=""> </span>
+        <span class="main__rooms--item" style="--i:6"> <img src="../assets/img/06-day.jpg" alt=""> </span>
+        <span class="main__rooms--item" style="--i:7"> <img src="../assets/img/07-day.jpg" alt=""> </span>
+        <span class="main__rooms--item" style="--i:8"> <img src="../assets/img/08-day.jpg" alt="" /> </span>
+      </section>
+
+      <section class="main__rooms--text">
+        <p class="section__rooms--text">
+          Welcome to our charming cabins!
+
+          Discover our exclusive collection of beautiful cabins, each represented with love and care from unique angles.
+          Explore every detail and emotion in these wonderful homes where each picture tells a story. From the warm hues
+          of the sunset to the tranquility of the night.
+
+          Each image is more than just a view; it's an invitation to explore and experience the atmosphere, comfort, and
+          natural beauty that our cabins have to offer. We look forward to welcoming you to a memorable stay in these
+          idyllic accommodations.
+        </p>
+      </section>
+    </main>
+
+  </div>
+
+  <footer class="footer">
+
+    <figure class="footer__figure--logo">
+      <img class="footer__image--logo" src="../assets/logo/bonz.ai-logo-black-landscape.png"
+        alt="Logo in black with text that say, bonz.ai">
+    </figure>
+
+
+
+    <section class="footer__container">
+
+      <section class="footer__section--item about">
+        <h2 class="footer__text--title">About Bonz.Ai</h2>
+        <ul class="section__unorderd-list--object">
+          <li class="footer__list--item">Work with us</li>
+          <li class="footer__list--item">Our company</li>
+          <li class="footer__list--item">Investors</li>
+          <li class="footer__list--item">Find us</li>
+        </ul>
+      </section>
+
+      <section class="footer__section--item costumer-service">
+        <h2 class="footer__text--title">Costumer service</h2>
+        <ul class="section__unorderd-list--object">
+          <li class="footer__list--item">FAQ - Frequently Asked Questions</li>
+          <li class="footer__list--item">Website Terms & Conditions</li>
+          <li class="footer__list--item">Privacy Policy</li>
+          <li class="footer__list--item">Cookie Policy</li>
+          <li class="footer__list--item">Contact us</li>
+
+        </ul>
+      </section>
+
+      <section class="footer__section--item help">
+        <h2 class="footer__text--title">Help</h2>
+        <ul class="section__unorderd-list--object">
+          <li class="footer__list--item">Responsible Disclosure</li>
+          <li class="footer__list--item">Customer Support</li>
+          <li class="footer__list--item">Guest Feedback</li>
+          <li class="footer__list--item">Sitemap</li>
+        </ul>
+      </section>
+
+    </section>
+  </footer>
+  <a class="footer__link--btn rooms" href="../Rooms/rooms.html"><button class="footer__btn">Take me to the
+      top</button></a>
+</body>
+
+</html>
+
+<!-- All ifyllnad-text är gjort med hjälp av openAi -->

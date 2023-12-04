@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bonz.ai/order-now</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <img class="header__logo" src="../assets/logo/bonz.ai-logo-black-portrait-full.png" alt="Bonz.Ai logo">
+  </header>
+
+  <div class="wrapper">
+
+    <nav class="navigation">
+      <a class="navigation__link--item" href="../index.html">Home</a>
+      <a class="navigation__link--item" href="../Facilities/facilities.html">Facilities</a>
+      <a class="navigation__link--item" href="../Rooms/rooms.html">Rooms</a>
+      <a class="navigation__link--item" href="../Order-Now/order.html">Order Now</a>
+    </nav>
+
+    <!-- Detta har jag använt mig utav när det kommer till hamburgarmenyn.
+         Kom inte ihåg allt så fick gå in och kolla hur vi hade gjort med Jesper på lektionen.
+         https://github.com/AdreanRodriguez/hamburger -->
+
+    <span class="hamburger">
+      <nav>
+        <input type="checkbox" class="burger" id="burger">
+        <label class="burger-btn" for="burger">
+          <span></span>
+        </label>
+        <ul class="menu">
+          <li class="menu-item"><a href="../index.html">Home</a></li>
+          <li class="menu-item"><a href="../Facilities/facilities.html">Facilities</a></li>
+          <li class="menu-item"><a href="../Rooms/rooms.html">Rooms</a></li>
+          <li class="menu-item"><a href="../Order-Now/order.html">Order Now</a></li>
+        </ul>
+      </nav>
+      <span class="page"></span>
+    </span>
+
+    <!-- Detta har jag använt mig utav som vi hade som övning i klassen.
+           https://github.com/AdreanRodriguez/forms/tree/main -->
+
+    <section class="section--form">
+      <form class="booking-form__container">
+        <fieldset class="booking-form__inner">
+          <label for="destination" class="booking-form__label">Destination:
+            <select name="destination" id="destination" class="booking-form__select">
+              <option value="">Select a location:</option>
+              <option value="forest">Forest</option>
+              <option value="waterline">Waterline</option>
+              <option value="mountain">Mountain</option>
+            </select>
+            <label for="date" class="booking-form__label">From:
+              <input type="date" id="date" class="booking-form__input">
+            </label>
+            <label for="date" class="booking-form__label">To:
+              <input type="date" id="date" class="booking-form__input">
+            </label>
+
+          </label>
+        </fieldset>
+        <input type="submit" value="Submit" class="btn">
+      </form>
+    </section>
+
+    <main class="main__container--order">
+
+      <section class="main__section">
+
+        <section class="section-forrest">
+          <figure class="section__figure-forrest">
+            <img class="section__image" src="../assets/img/01-day.jpg" alt="">
+          </figure>
+          <article class="article__text-forrest">
+            <h2 class="section__text-title">Forrest Cabin</h2>
+            <p class="section__text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+              similique
+              vero nesciunt dolore illo a ipsum aut asperiores cum distinctio?</p>
+            <button class="btn">Order Now!</button>
+          </article>
+        </section>
+
+        <section class="section-waterline">
+          <figure class="section__figure-waterline">
+            <img class="section__image" src="../assets/img/02-day.jpg" alt="">
+          </figure>
+          <article class="article__text-waterline">
+            <h2 class="section__text-title">Waterline Cabin</h2>
+            <p class="section__text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+              similique
+              vero nesciunt dolore illo a ipsum aut asperiores cum distinctio?</p>
+            <button class="btn">Order Now!</button>
+          </article>
+        </section>
+
+        <section class="section-mountain">
+          <figure class="section__figure-mountain">
+            <img class="section__image" src="../assets/img/03-day.jpg" alt="">
+          </figure>
+          <article class="article__text-mountain">
+            <h2 class="section__text-title">Mountain Cabin</h2>
+            <p class="section__text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+              similique
+              vero nesciunt dolore illo a ipsum aut asperiores cum distinctio?</p>
+            <button class="btn">Order Now!</button>
+          </article>
+        </section>
+
+
+      </section>
+
+
+
+    </main>
+
+  </div>
+
+  <footer class="footer">
+
+    <figure class="footer__figure--logo">
+      <img class="footer__image--logo" src="../assets/logo/bonz.ai-logo-black-landscape.png"
+        alt="Logo in black with text that say, bonz.ai">
+    </figure>
+
+
+
+    <section class="footer__container">
+
+      <section class="footer__section--item about">
+        <h2 class="footer__text--title">About Bonz.Ai</h2>
+        <ul class="section__unorderd-list--object">
+          <li class="footer__list--item">Work with us</li>
+          <li class="footer__list--item">Our company</li>
+          <li class="footer__list--item">Investors</li>
+          <li class="footer__list--item">Find us</li>
+        </ul>
+      </section>
+
+      <section class="footer__section--item costumer-service">
+        <h2 class="footer__text--title">Costumer service</h2>
+        <ul class="section__unorderd-list--object">
+          <li class="footer__list--item">FAQ - Frequently Asked Questions</li>
+          <li class="footer__list--item">Website Terms & Conditions</li>
+          <li class="footer__list--item">Privacy Policy</li>
+          <li class="footer__list--item">Cookie Policy</li>
+          <li class="footer__list--item">Contact us</li>
+
+        </ul>
+      </section>
+
+      <section class="footer__section--item help">
+        <h2 class="footer__text--title">Help</h2>
+        <ul class="section__unorderd-list--object">
+          <li class="footer__list--item">Responsible Disclosure</li>
+          <li class="footer__list--item">Customer Support</li>
+          <li class="footer__list--item">Guest Feedback</li>
+          <li class="footer__list--item">Sitemap</li>
+        </ul>
+      </section>
+
+    </section>
+  </footer>
+  <a class="footer__link--btn" href="../Order-Now/order.html"><button class="footer__btn">Take me to the
+      top</button></a>
+</body>
+
+</html>
+
+<!-- All ifyllnad-text är gjort med hjälp av openAi -->
