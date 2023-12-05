@@ -16,94 +16,94 @@
 
   <div class="wrapper">
 
-    <nav class="navigation">
-      <a class="navigation__link--item" href="../index.html">Home</a>
-      <a class="navigation__link--item" href="../Facilities/facilities.html">Facilities</a>
-      <a class="navigation__link--item" href="../Rooms/rooms.html">Rooms</a>
-      <a class="navigation__link--item" href="../Order-Now/order.html">Order Now</a>
+    <nav class="navigation-container">
+      <a class="navigation-container__link navigation__link--item" href="../index.html">Home</a>
+      <a class="navigation-container__link navigation__link--item" href="../Facilities/facilities.html">Facilities</a>
+      <a class="navigation-container__link navigation__link--item" href="../Rooms/rooms.html">Rooms</a>
+      <a class="navigation-container__link navigation__link--item" href="../Order-Now/order.html">Order Now</a>
     </nav>
 
     <!-- Detta har jag använt mig utav när det kommer till hamburgarmenyn.
          Kom inte ihåg allt så fick gå in och kolla hur vi hade gjort med Jesper på lektionen.
          https://github.com/AdreanRodriguez/hamburger -->
 
-    <section class="hamburger">
-      <nav>
-        <input type="checkbox" class="burger" id="burger">
-        <label class="burger-btn" for="burger">
+    <section class="hamburger-container">
+      <nav class="hamburger-container__navigation hamburger__navigation">
+        <input type="checkbox" class="hamburger-container__burger burger" id="burger">
+        <label class="hamburger-container__burger-btn burger-btn" for="burger">
           <span></span>
         </label>
-        <ul class="menu">
+        <ul class="hamburger-container__menu menu">
           <li class="menu-item"><a href="../index.html">Home</a></li>
           <li class="menu-item"><a href="../Facilities/facilities.html">Facilities</a></li>
           <li class="menu-item"><a href="../Rooms/rooms.html">Rooms</a></li>
           <li class="menu-item"><a href="../Order-Now/order.html">Order Now</a></li>
         </ul>
       </nav>
-      <span class="page"></span>
+      <span class="hamburger-container__page page"></span>
     </section>
 
-    <main class="main__container--facilities">
+    <main class="main-container main-container--facilities">
 
-      <section class="main__section--facilitites">
-        <h2 class="section-title-text">Our Nature-Inspired Facilities</h2>
+      <section class="main-section main-section--facilitites">
+        <h2 class="main-section__title">Our Nature-Inspired Facilities</h2>
 
-        <ul>
-          <li class="section__list-item--facilities">Guided Nature Walks:
+        <ul class="section__facilities-list">
+          <li class="section__facilities-list-item">Guided Nature Walks:
           </li>
-          <p class="section__list-item--text">Offer guided tours where visitors can explore the beautiful nature with a
+          <p class="main-section__info">Offer guided tours where visitors can explore the beautiful nature with a
             knowledgeable guide.</p>
 
-          <li class="section__list-item--facilities">Meditation Sites:</li>
-          <p class="section__list-item--text">Create
+          <li class="section__facilities-list-item">Meditation Sites:</li>
+          <p class="main-section__info">Create
             relaxing places where visitors can meditate and unwind in nature.</p>
 
-          <li class="section__list-item--facilities">Yoga Retreats:</li>
-          <p class="section__list-item--text">Organize outdoor
+          <li class="section__facilities-list-item">Yoga Retreats:</li>
+          <p class="main-section__info">Organize outdoor
             yoga sessions to promote health and well-being.</p>
 
-          <li class="section__list-item--facilities">Organic Restaurant:</li>
-          <p class="section__list-item--text">Serve
+          <li class="section__facilities-list-item">Organic Restaurant:</li>
+          <p class="main-section__info">Serve
             healthy and organic food that complements the natural experience.</p>
 
-          <li class="section__list-item--facilities">Biotop-pool:</li>
-          <p class="section__list-item--text">Create a natural
+          <li class="section__facilities-list-item">Biotop-pool:</li>
+          <p class="main-section__info">Create a natural
             pool or pond where visitors can swim in a natural water environment.</p>
 
-          <li class="section__list-item--facilities">Treehouse Accommodation:</li>
-          <p class="section__list-item--text">Provide
+          <li class="section__facilities-list-item">Treehouse Accommodation:</li>
+          <p class="main-section__info">Provide
             accommodation in treehouses for a unique and nature-oriented experience.</p>
 
-          <li class="section__list-item--facilities">Botanical Garden:</li>
-          <p class="section__list-item--text">Establish a
+          <li class="section__facilities-list-item">Botanical Garden:</li>
+          <p class="main-section__info">Establish a
             garden with different plant species to promote biodiversity and create a beautiful atmosphere.</p>
 
-          <li class="section__list-item--facilities">Healthy Restaurant:</li>
-          <p class="section__list-item--text">Serve
+          <li class="section__facilities-list-item">Healthy Restaurant:</li>
+          <p class="main-section__info">Serve
             nutritious and healthy food that supports visitors' well-being.</p>
 
-          <li class="section__list-item--facilities">Nature Spa:</li>
-          <p class="section__list-item--text">Create a spa where
+          <li class="section__facilities-list-item">Nature Spa:</li>
+          <p class="main-section__info">Create a spa where
             visitors can enjoy natural treatments and wellness experiences.</p>
 
-          <li class="section__list-item--facilities">Stargazing:</li>
-          <p class="section__list-item--text">Offer various
+          <li class="section__facilities-list-item">Stargazing:</li>
+          <p class="main-section__info">Offer various
             outdoor activities that may include cycling, fishing, or bird watching.</p>
         </ul>
       </section>
-      <figure class="main__figure--facilities">
+
+      <figure class="main__figure main__figure--facilities">
         <img src="../assets/img/09-day.jpg" alt="Photo taken on a modern fireplace in a cabin">
       </figure>
 
     </main>
 
-
   </div>
 
   <footer class="footer">
 
-    <figure class="footer__figure--logo">
-      <img class="footer__image--logo" src="../assets/logo/bonz.ai-logo-black-landscape.png"
+    <figure class="footer__figure footer__figure--logo">
+      <img class="footer__image footer__image--logo" src="../assets/logo/bonz.ai-logo-black-landscape.png"
         alt="Logo in black with text that say, bonz.ai">
     </figure>
 
@@ -111,42 +111,42 @@
 
     <section class="footer__container">
 
-      <section class="footer__section--item about">
-        <h2 class="footer__text--title">About Bonz.Ai</h2>
-        <ul class="section__unorderd-list--object">
-          <li class="footer__list--item">Work with us</li>
-          <li class="footer__list--item">Our company</li>
-          <li class="footer__list--item">Investors</li>
-          <li class="footer__list--item">Find us</li>
+      <section class="footer__section footer__section--item about">
+        <h2 class="footer__text footer__text--title">About Bonz.Ai</h2>
+        <ul class="footer__list section__unorderd-list--object">
+          <li class="footer__list-item">Work with us</li>
+          <li class="footer__list-item">Our company</li>
+          <li class="footer__list-item">Investors</li>
+          <li class="footer__list-item">Find us</li>
         </ul>
       </section>
 
       <section class="footer__section--item costumer-service">
-        <h2 class="footer__text--title">Costumer service</h2>
-        <ul class="section__unorderd-list--object">
-          <li class="footer__list--item">FAQ - Frequently Asked Questions</li>
-          <li class="footer__list--item">Website Terms & Conditions</li>
-          <li class="footer__list--item">Privacy Policy</li>
-          <li class="footer__list--item">Cookie Policy</li>
-          <li class="footer__list--item">Contact us</li>
+        <h2 class="footer__text footer__text--title">Customer service</h2>
+        <ul class="footer__list section__unorderd-list--object">
+          <li class="footer__list-item">FAQ - Frequently Asked Questions</li>
+          <li class="footer__list-item">Website Terms & Conditions</li>
+          <li class="footer__list-item">Privacy Policy</li>
+          <li class="footer__list-item">Cookie Policy</li>
+          <li class="footer__list-item">Contact us</li>
 
         </ul>
       </section>
 
       <section class="footer__section--item help">
-        <h2 class="footer__text--title">Help</h2>
-        <ul class="section__unorderd-list--object">
-          <li class="footer__list--item">Responsible Disclosure</li>
-          <li class="footer__list--item">Customer Support</li>
-          <li class="footer__list--item">Guest Feedback</li>
-          <li class="footer__list--item">Sitemap</li>
+        <h2 class="footer__text footer__text--title">Help</h2>
+        <ul class="footer__list section__unorderd-list--object">
+          <li class="footer__list-item">Responsible Disclosure</li>
+          <li class="footer__list-item">Customer Support</li>
+          <li class="footer__list-item">Guest Feedback</li>
+          <li class="footer__list-item">Sitemap</li>
         </ul>
       </section>
 
     </section>
   </footer>
-  <a class="footer__link--btn" href="../Facilities/facilities.html"><button class="footer__btn">Take me to the
-      top</button></a>
+  <a class="footer__link footer__link--btn" href="../Facilities/facilities.html">
+    <button class="footer__btn">Take me to the top</button></a>
 
 
 </body>
