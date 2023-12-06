@@ -49,31 +49,31 @@
 
     <!-- Detta har jag använt mig utav som vi hade som övning i klassen.
            https://github.com/AdreanRodriguez/forms/tree/main -->
-           
 
-<main class="main-container main-container--order">
 
-    <section class="booking-form">
-      <form class="booking-form__container">
-        <fieldset class="booking-form__inner">
-          <label for="destination" class="booking-form__label">Destination:
-            <select name="destination" id="destination" class="booking-form__select">
-              <option value="">Select a location:</option>
-              <option value="forest">Forest</option>
-              <option value="waterline">Waterline</option>
-              <option value="mountain">Mountain</option>
-            </select>
-            <label for="date" class="booking-form__label">From:
-              <input type="date" id="date" class="booking-form__input">
+    <main class="main-container main-container--order">
+
+      <section class="booking-form">
+        <form class="booking-form__container">
+          <fieldset class="booking-form__inner">
+            <label for="destination" class="booking-form__label">Destination:
+              <select name="destination" id="destination" class="booking-form__select">
+                <option value="">Select a location:</option>
+                <option value="forest">Forest</option>
+                <option value="waterline">Waterline</option>
+                <option value="mountain">Mountain</option>
+              </select>
+              <label for="date" class="booking-form__label">From:
+                <input type="date" id="date" class="booking-form__input">
+              </label>
+              <label for="date" class="booking-form__label">To:
+                <input type="date" id="date" class="booking-form__input">
+              </label>
             </label>
-            <label for="date" class="booking-form__label">To:
-              <input type="date" id="date" class="booking-form__input">
-            </label>
-          </label>
-        </fieldset>
-        <input type="submit" value="Submit" class="btn">
-      </form>
-    </section>
+          </fieldset>
+          <input type="submit" value="Submit" class="btn">
+        </form>
+      </section>
 
       <section class="main__section">
 
@@ -83,9 +83,10 @@
           </figure>
           <article class="article-container">
             <h2 class="article-container__title">Forrest Cabin</h2>
-            <p class="article-container__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
-              similique
-              vero nesciunt dolore illo a ipsum aut asperiores cum distinctio?</p>
+            <p class="article-container__info">Forrest Cabin is a wonderful retreat nestled in nature, surrounded by the
+              tranquil forest. This picturesque cabin offers a sanctuary from the hustle and bustle of the city, making
+              it the perfect place to relax and reconnect with nature. With a simple and charming design, Forrest Cabin
+              is a place where you can enjoy the serenity of the forest while being comfortable and sheltered.</p>
             <button class="btn">Order Now!</button>
           </article>
         </section>
@@ -96,9 +97,11 @@
           </figure>
           <article class="article-container">
             <h2 class="article-container__title">Waterline Cabin</h2>
-            <p class="article-container__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
-              similique
-              vero nesciunt dolore illo a ipsum aut asperiores cum distinctio?</p>
+            <p class="article-container__info">Waterline Cabin offers an idyllic retreat by the water, where you can
+              enjoy the tranquility and beauty that the water has to offer. Located by the waterfront, this charming
+              cabin provides an outstanding view of the waterline, creating an atmosphere of peace and relaxation. With
+              a harmonious design and modern amenities, Waterline Cabin becomes the perfect spot for a peaceful stay.
+            </p>
             <button class="btn">Order Now!</button>
           </article>
         </section>
@@ -109,9 +112,10 @@
           </figure>
           <article class="article-container">
             <h2 class="article-container__title">Mountain Cabin</h2>
-            <p class="article-container__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
-              similique
-              vero nesciunt dolore illo a ipsum aut asperiores cum distinctio?</p>
+            <p class="article-container__info">Nestled high up in the mountains, Mountain Cabin offers a magnificent
+              retreat for those seeking a close experience with nature. This charming cabin entices with panoramic views
+              of the mountain peaks and seclusion that creates an atmosphere of tranquility and adventure. With a rustic
+              design and simple elegance, Mountain Cabin becomes the perfect base for a relaxing mountain getaway.</p>
             <button class="btn">Order Now!</button>
           </article>
         </section>
@@ -126,8 +130,8 @@
 
   <footer class="footer">
 
-    <figure class="footer__figure--logo">
-      <img class="footer__image" src="../assets/logo/bonz.ai-logo-black-landscape.png"
+    <figure class="footer__image-container">
+      <img class="footer-container__image" src="../assets/logo/bonz.ai-logo-black-landscape.png"
         alt="Logo in black with text that say, bonz.ai">
     </figure>
 
@@ -151,7 +155,6 @@
           <li class="footer__list-item">Privacy Policy</li>
           <li class="footer__list-item">Cookie Policy</li>
           <li class="footer__list-item">Contact us</li>
-
         </ul>
       </section>
 
