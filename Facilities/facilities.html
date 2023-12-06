@@ -17,10 +17,10 @@
   <div class="wrapper">
 
     <nav class="navigation-container">
-      <a class="navigation-container__link navigation__link--item" href="../index.html">Home</a>
-      <a class="navigation-container__link navigation__link--item" href="../Facilities/facilities.html">Facilities</a>
-      <a class="navigation-container__link navigation__link--item" href="../Rooms/rooms.html">Rooms</a>
-      <a class="navigation-container__link navigation__link--item" href="../Order-Now/order.html">Order Now</a>
+      <a class="navigation-container__link-item" href="../index.html">Home</a>
+      <a class="navigation-container__link-item" href="../Facilities/facilities.html">Facilities</a>
+      <a class="navigation-container__link-item" href="../Rooms/rooms.html">Rooms</a>
+      <a class="navigation-container__link-item" href="../Order-Now/order.html">Order Now</a>
     </nav>
 
     <!-- Detta har jag använt mig utav när det kommer till hamburgarmenyn.
@@ -28,19 +28,23 @@
          https://github.com/AdreanRodriguez/hamburger -->
 
     <section class="hamburger-container">
-      <nav class="hamburger-container__navigation hamburger__navigation">
-        <input type="checkbox" class="hamburger-container__burger burger" id="burger">
-        <label class="hamburger-container__burger-btn burger-btn" for="burger">
+      <nav>
+        <input type="checkbox" class="burger" id="burger">
+        <label class="burger-btn" for="burger">
           <span></span>
         </label>
-        <ul class="hamburger-container__menu menu">
-          <li class="menu-item"><a href="../index.html">Home</a></li>
-          <li class="menu-item"><a href="../Facilities/facilities.html">Facilities</a></li>
-          <li class="menu-item"><a href="../Rooms/rooms.html">Rooms</a></li>
-          <li class="menu-item"><a href="../Order-Now/order.html">Order Now</a></li>
+        <ul class="hamburger-container__menu">
+          <li class="hamburger-container__menu-item"><a class="hamburger-container__menu-link"
+              href="../index.html">Home</a></li>
+          <li class="hamburger-container__menu-item"><a class="hamburger-container__menu-link"
+              href="../Facilities/facilities.html">Facilities</a></li>
+          <li class="hamburger-container__menu-item"><a class="hamburger-container__menu-link"
+              href="../Rooms/rooms.html">Rooms</a></li>
+          <li class="hamburger-container__menu-item"><a class="hamburger-container__menu-link"
+              href="../Order-Now/order.html">Order Now</a></li>
         </ul>
       </nav>
-      <span class="hamburger-container__page page"></span>
+      <span class="page"></span>
     </section>
 
     <main class="main-container main-container--facilities">
@@ -102,18 +106,16 @@
 
   <footer class="footer">
 
-    <figure class="footer__figure footer__figure--logo">
-      <img class="footer__image footer__image--logo" src="../assets/logo/bonz.ai-logo-black-landscape.png"
+    <figure class="footer__figure--logo">
+      <img class="footer__image" src="../assets/logo/bonz.ai-logo-black-landscape.png"
         alt="Logo in black with text that say, bonz.ai">
     </figure>
 
+    <section class="footer-container">
 
-
-    <section class="footer__container">
-
-      <section class="footer__section footer__section--item about">
-        <h2 class="footer__text footer__text--title">About Bonz.Ai</h2>
-        <ul class="footer__list section__unorderd-list--object">
+      <section class="footer-section">
+        <h2 class="footer-section__title">About Bonz.Ai</h2>
+        <ul class="footer-section__unorderd-list">
           <li class="footer__list-item">Work with us</li>
           <li class="footer__list-item">Our company</li>
           <li class="footer__list-item">Investors</li>
@@ -121,9 +123,9 @@
         </ul>
       </section>
 
-      <section class="footer__section--item costumer-service">
-        <h2 class="footer__text footer__text--title">Customer service</h2>
-        <ul class="footer__list section__unorderd-list--object">
+      <section class="footer-section">
+        <h2 class="footer-section__title">Costumer service</h2>
+        <ul class="footer-section__unorderd-list">
           <li class="footer__list-item">FAQ - Frequently Asked Questions</li>
           <li class="footer__list-item">Website Terms & Conditions</li>
           <li class="footer__list-item">Privacy Policy</li>
@@ -133,9 +135,9 @@
         </ul>
       </section>
 
-      <section class="footer__section--item help">
-        <h2 class="footer__text footer__text--title">Help</h2>
-        <ul class="footer__list section__unorderd-list--object">
+      <section class="footer-section">
+        <h2 class="footer-section__title">Help</h2>
+        <ul class="footer-section__unorderd-list">
           <li class="footer__list-item">Responsible Disclosure</li>
           <li class="footer__list-item">Customer Support</li>
           <li class="footer__list-item">Guest Feedback</li>
@@ -145,8 +147,8 @@
 
     </section>
   </footer>
-  <a class="footer__link footer__link--btn" href="../Facilities/facilities.html">
-    <button class="footer__btn">Take me to the top</button></a>
+  <a class="footer__link--btn" href="../Facilities/facilities.html"><button class="footer__btn">Take me to the
+      top</button></a>
 
 
 </body>

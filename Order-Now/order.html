@@ -16,11 +16,11 @@
 
   <div class="wrapper">
 
-    <nav class="navigation">
-      <a class="navigation__link--item" href="../index.html">Home</a>
-      <a class="navigation__link--item" href="../Facilities/facilities.html">Facilities</a>
-      <a class="navigation__link--item" href="../Rooms/rooms.html">Rooms</a>
-      <a class="navigation__link--item" href="../Order-Now/order.html">Order Now</a>
+    <nav class="navigation-container">
+      <a class="navigation-container__link-item" href="../index.html">Home</a>
+      <a class="navigation-container__link-item" href="../Facilities/facilities.html">Facilities</a>
+      <a class="navigation-container__link-item" href="../Rooms/rooms.html">Rooms</a>
+      <a class="navigation-container__link-item" href="../Order-Now/order.html">Order Now</a>
     </nav>
 
     <!-- Detta har jag använt mig utav när det kommer till hamburgarmenyn.
@@ -33,11 +33,15 @@
         <label class="burger-btn" for="burger">
           <span></span>
         </label>
-        <ul class="menu">
-          <li class="menu-item"><a href="../index.html">Home</a></li>
-          <li class="menu-item"><a href="../Facilities/facilities.html">Facilities</a></li>
-          <li class="menu-item"><a href="../Rooms/rooms.html">Rooms</a></li>
-          <li class="menu-item"><a href="../Order-Now/order.html">Order Now</a></li>
+        <ul class="hamburger-container__menu">
+          <li class="hamburger-container__menu-item"><a class="hamburger-container__menu-link"
+              href="../index.html">Home</a></li>
+          <li class="hamburger-container__menu-item"><a class="hamburger-container__menu-link"
+              href="../Facilities/facilities.html">Facilities</a></li>
+          <li class="hamburger-container__menu-item"><a class="hamburger-container__menu-link"
+              href="../Rooms/rooms.html">Rooms</a></li>
+          <li class="hamburger-container__menu-item"><a class="hamburger-container__menu-link"
+              href="../Order-Now/order.html">Order Now</a></li>
         </ul>
       </nav>
       <span class="page"></span>
@@ -45,6 +49,9 @@
 
     <!-- Detta har jag använt mig utav som vi hade som övning i klassen.
            https://github.com/AdreanRodriguez/forms/tree/main -->
+           
+
+<main class="main-container main-container--order">
 
     <section class="booking-form">
       <form class="booking-form__container">
@@ -68,49 +75,46 @@
       </form>
     </section>
 
-    <main class="main-container main-container--order">
-
       <section class="main__section">
 
-        <section class="section-forrest">
-          <figure class="section__figure-forrest">
-            <img class="section__image" src="../assets/img/01-day.jpg" alt="">
+        <section class="section-container">
+          <figure class="section-container__image-container">
+            <img class="section-container__image" src="../assets/img/01-day.jpg" alt="">
           </figure>
-          <article class="article__text-forrest">
-            <h2 class="section__text-title">Forrest Cabin</h2>
-            <p class="section__text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+          <article class="article-container">
+            <h2 class="article-container__title">Forrest Cabin</h2>
+            <p class="article-container__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
               similique
               vero nesciunt dolore illo a ipsum aut asperiores cum distinctio?</p>
             <button class="btn">Order Now!</button>
           </article>
         </section>
 
-        <section class="section-waterline">
-          <figure class="section__figure-waterline">
-            <img class="section__image" src="../assets/img/02-day.jpg" alt="">
+        <section class="section-container section-container--reversed">
+          <figure class="section__image-container--reversed">
+            <img class="section-container__image" src="../assets/img/02-day.jpg" alt="">
           </figure>
-          <article class="article__text-waterline">
-            <h2 class="section__text-title">Waterline Cabin</h2>
-            <p class="section__text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+          <article class="article-container">
+            <h2 class="article-container__title">Waterline Cabin</h2>
+            <p class="article-container__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
               similique
               vero nesciunt dolore illo a ipsum aut asperiores cum distinctio?</p>
             <button class="btn">Order Now!</button>
           </article>
         </section>
 
-        <section class="section-mountain">
-          <figure class="section__figure-mountain">
-            <img class="section__image" src="../assets/img/03-day.jpg" alt="">
+        <section class="section-container">
+          <figure class="section-container__image-container">
+            <img class="section-container__image" src="../assets/img/03-day.jpg" alt="">
           </figure>
-          <article class="article__text-mountain">
-            <h2 class="section__text-title">Mountain Cabin</h2>
-            <p class="section__text-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+          <article class="article-container">
+            <h2 class="article-container__title">Mountain Cabin</h2>
+            <p class="article-container__info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
               similique
               vero nesciunt dolore illo a ipsum aut asperiores cum distinctio?</p>
             <button class="btn">Order Now!</button>
           </article>
         </section>
-
 
       </section>
 
@@ -123,43 +127,41 @@
   <footer class="footer">
 
     <figure class="footer__figure--logo">
-      <img class="footer__image--logo" src="../assets/logo/bonz.ai-logo-black-landscape.png"
+      <img class="footer__image" src="../assets/logo/bonz.ai-logo-black-landscape.png"
         alt="Logo in black with text that say, bonz.ai">
     </figure>
 
+    <section class="footer-container">
 
-
-    <section class="footer__container">
-
-      <section class="footer__section--item about">
-        <h2 class="footer__text--title">About Bonz.Ai</h2>
-        <ul class="section__unorderd-list--object">
-          <li class="footer__list--item">Work with us</li>
-          <li class="footer__list--item">Our company</li>
-          <li class="footer__list--item">Investors</li>
-          <li class="footer__list--item">Find us</li>
+      <section class="footer-section">
+        <h2 class="footer-section__title">About Bonz.Ai</h2>
+        <ul class="footer-section__unorderd-list">
+          <li class="footer__list-item">Work with us</li>
+          <li class="footer__list-item">Our company</li>
+          <li class="footer__list-item">Investors</li>
+          <li class="footer__list-item">Find us</li>
         </ul>
       </section>
 
-      <section class="footer__section--item costumer-service">
-        <h2 class="footer__text--title">Costumer service</h2>
-        <ul class="section__unorderd-list--object">
-          <li class="footer__list--item">FAQ - Frequently Asked Questions</li>
-          <li class="footer__list--item">Website Terms & Conditions</li>
-          <li class="footer__list--item">Privacy Policy</li>
-          <li class="footer__list--item">Cookie Policy</li>
-          <li class="footer__list--item">Contact us</li>
+      <section class="footer-section">
+        <h2 class="footer-section__title">Costumer service</h2>
+        <ul class="footer-section__unorderd-list">
+          <li class="footer__list-item">FAQ - Frequently Asked Questions</li>
+          <li class="footer__list-item">Website Terms & Conditions</li>
+          <li class="footer__list-item">Privacy Policy</li>
+          <li class="footer__list-item">Cookie Policy</li>
+          <li class="footer__list-item">Contact us</li>
 
         </ul>
       </section>
 
-      <section class="footer__section--item help">
-        <h2 class="footer__text--title">Help</h2>
-        <ul class="section__unorderd-list--object">
-          <li class="footer__list--item">Responsible Disclosure</li>
-          <li class="footer__list--item">Customer Support</li>
-          <li class="footer__list--item">Guest Feedback</li>
-          <li class="footer__list--item">Sitemap</li>
+      <section class="footer-section">
+        <h2 class="footer-section__title">Help</h2>
+        <ul class="footer-section__unorderd-list">
+          <li class="footer__list-item">Responsible Disclosure</li>
+          <li class="footer__list-item">Customer Support</li>
+          <li class="footer__list-item">Guest Feedback</li>
+          <li class="footer__list-item">Sitemap</li>
         </ul>
       </section>
 
@@ -167,6 +169,7 @@
   </footer>
   <a class="footer__link--btn" href="../Order-Now/order.html"><button class="footer__btn">Take me to the
       top</button></a>
+
 </body>
 
 </html>

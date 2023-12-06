@@ -16,11 +16,11 @@
 
   <div class="wrapper">
 
-    <nav class="navigation">
-      <a class="navigation__link--item" href="index.html">Home</a>
-      <a class="navigation__link--item" href="./Facilities/facilities.html">Facilities</a>
-      <a class="navigation__link--item" href="./Rooms/rooms.html">Rooms</a>
-      <a class="navigation__link--item" href="./Order-Now/order.html">Order Now</a>
+    <nav class="navigation-container">
+      <a class="navigation-container__link-item" href="../index.html">Home</a>
+      <a class="navigation-container__link-item" href="../Facilities/facilities.html">Facilities</a>
+      <a class="navigation-container__link-item" href="../Rooms/rooms.html">Rooms</a>
+      <a class="navigation-container__link-item" href="../Order-Now/order.html">Order Now</a>
     </nav>
 
     <!-- Detta har jag använt mig utav när det kommer till hamburgarmenyn.
@@ -33,11 +33,15 @@
         <label class="burger-btn" for="burger">
           <span></span>
         </label>
-        <ul class="menu">
-          <li class="menu-item"><a href="./index.html">Home</a></li>
-          <li class="menu-item"><a href="./Facilities/facilities.html">Facilities</a></li>
-          <li class="menu-item"><a href="./Rooms/rooms.html">Rooms</a></li>
-          <li class="menu-item"><a href="./Order-Now/order.html">Order Now</a></li>
+        <ul class="hamburger-container__menu">
+          <li class="hamburger-container__menu-item"><a class="hamburger-container__menu-link"
+              href="../index.html">Home</a></li>
+          <li class="hamburger-container__menu-item"><a class="hamburger-container__menu-link"
+              href="../Facilities/facilities.html">Facilities</a></li>
+          <li class="hamburger-container__menu-item"><a class="hamburger-container__menu-link"
+              href="../Rooms/rooms.html">Rooms</a></li>
+          <li class="hamburger-container__menu-item"><a class="hamburger-container__menu-link"
+              href="../Order-Now/order.html">Order Now</a></li>
         </ul>
       </nav>
       <span class="page"></span>
@@ -52,8 +56,8 @@
           alt="Photo with water and mountains in the background, taken in daylight.">
       </figure>
       <article class="article">
-        <h2 class="article-text-title">Seaview from Bonz.ai</h2>
-        <p class="article-text-small">A serene morning where the sea meets the horizon. The view from our pier is as
+        <h2 class="article__title">Seaview from Bonz.ai</h2>
+        <p class="article__info">A serene morning where the sea meets the horizon. The view from our pier is as
           tranquil as it is unforgettable. Gaze up at the mountains guarding Bonz.ai. Their majestic presence provides a
           spectacular backdrop to this oasis of relaxation. The blend of greenery embracing our little hideaways creates
           an atmosphere of tranquility. Experience the beauty of nature with every step around our wonderful locations.
@@ -66,8 +70,8 @@
           alt="Photo with water and mountains in the background, taken in the evening.">
       </figure>
       <article class="article">
-        <h2 class="article-text-title">Evening time.</h2>
-        <p class="article-text-small">As the sun slowly sinks behind the horizon, Bonz.ai initiates its
+        <h2 class="article__title">Evening time.</h2>
+        <p class="article__info">As the sun slowly sinks behind the horizon, Bonz.ai initiates its
           magical transformation. Soft, shimmering lights along the pier guide guests to an oasis of tranquility. The
           picturesque house is bathed in warm tones, creating shadows that dance in harmony with the evening breeze..
         </p>
@@ -79,8 +83,8 @@
           alt="Photo taken from upstairs, looking down straight into the living room.">
       </figure>
       <article class="article">
-        <h2 class="article-text-title">From within.</h2>
-        <p class="article-text-small">Inside Bonz.ai, the warm light becomes an invitation to relaxation.
+        <h2 class="article__title">From within.</h2>
+        <p class="article__info">Inside Bonz.ai, the warm light becomes an invitation to relaxation.
           Lounge furniture reveals an atmosphere of sophisticated comfort, and guests gather to enjoy the evening
           ambiance. With the mountains as a dark, majestic backdrop and the sea as a tranquil background cloud, Bonz.ai
           creates a memorable evening experience for those seeking peace and beauty in every moment.</p>
@@ -92,10 +96,11 @@
           alt="Photo taken from bed, looking out through the window straight to the lake.">
       </figure>
       <article class="article">
-        <h2 class="article-text-title">Sea view from the bed.</h2>
-        <p class="article-text-small">From the bed's gentle embrace, an endless panorama
+        <h2 class="article__title">Sea view from the bed.</h2>
+        <p class="article__info">From the bed's gentle embrace, an endless panorama
           unfolds through the window. The muted sound of the waves' loving dance
-          reaches the ears. The sole window acts as a portal to a world of stillness and beauty. Every wave and every tree in the
+          reaches the ears. The sole window acts as a portal to a world of stillness and beauty. Every wave and every
+          tree in the
           distance tells a story of peace and wonder. The lone window becomes a frame for a painting of natural beauty,
           where the guest can dream away and feel the harmony that only nature can offer.</p>
       </article>
@@ -108,43 +113,41 @@
   <footer class="footer">
 
     <figure class="footer__figure--logo">
-      <img class="footer__image--logo" src="./assets/logo/bonz.ai-logo-black-landscape.png"
+      <img class="footer__image" src="./assets/logo/bonz.ai-logo-black-landscape.png"
         alt="Logo in black with text that say, bonz.ai">
     </figure>
 
+    <section class="footer-container">
 
-
-    <section class="footer__container">
-
-      <section class="footer__section--item">
-        <h2 class="footer__text--title">About Bonz.Ai</h2>
-        <ul class="section__unorderd-list--object">
-          <li class="footer__list--item">Work with us</li>
-          <li class="footer__list--item">Our company</li>
-          <li class="footer__list--item">Investors</li>
-          <li class="footer__list--item">Find us</li>
+      <section class="footer-section">
+        <h2 class="footer-section__title">About Bonz.Ai</h2>
+        <ul class="footer-section__unorderd-list">
+          <li class="footer__list-item">Work with us</li>
+          <li class="footer__list-item">Our company</li>
+          <li class="footer__list-item">Investors</li>
+          <li class="footer__list-item">Find us</li>
         </ul>
       </section>
 
-      <section class="footer__section--item">
-        <h2 class="footer__text--title">Costumer service</h2>
-        <ul class="section__unorderd-list--object">
-          <li class="footer__list--item">FAQ - Frequently Asked Questions</li>
-          <li class="footer__list--item">Website Terms & Conditions</li>
-          <li class="footer__list--item">Privacy Policy</li>
-          <li class="footer__list--item">Cookie Policy</li>
-          <li class="footer__list--item">Contact us</li>
+      <section class="footer-section">
+        <h2 class="footer-section__title">Costumer service</h2>
+        <ul class="footer-section__unorderd-list">
+          <li class="footer__list-item">FAQ - Frequently Asked Questions</li>
+          <li class="footer__list-item">Website Terms & Conditions</li>
+          <li class="footer__list-item">Privacy Policy</li>
+          <li class="footer__list-item">Cookie Policy</li>
+          <li class="footer__list-item">Contact us</li>
 
         </ul>
       </section>
 
-      <section class="footer__section--item">
-        <h2 class="footer__text--title">Help</h2>
-        <ul class="section__unorderd-list--object">
-          <li class="footer__list--item">Responsible Disclosure</li>
-          <li class="footer__list--item">Customer Support</li>
-          <li class="footer__list--item">Guest Feedback</li>
-          <li class="footer__list--item">Sitemap</li>
+      <section class="footer-section">
+        <h2 class="footer-section__title">Help</h2>
+        <ul class="footer-section__unorderd-list">
+          <li class="footer__list-item">Responsible Disclosure</li>
+          <li class="footer__list-item">Customer Support</li>
+          <li class="footer__list-item">Guest Feedback</li>
+          <li class="footer__list-item">Sitemap</li>
         </ul>
       </section>
 

@@ -62,21 +62,18 @@ p {
   align-items: center;
 }
 
-.navigation__link--item {
+.navigation-container__link-item {
   text-decoration: none;
   color: var(--text-color-ligtblack);
   cursor: pointer;
   transition: color 0.3s;
 }
 
-.navigation__link--item:hover {
+.navigation-container__link-item:hover {
   color: var(--header-color-upper);
 }
 
-.figure__image {
-  width: 100%;
-  height: 100%;
-}
+
 
 /* HAMBURGER */
 
@@ -135,14 +132,14 @@ https://github.com/AdreanRodriguez/hamburger */
   transform: rotate(90deg);
 }
 
-.burger:checked~.menu {
+.burger:checked~.hamburger-container__menu {
   visibility: visible;
   right: 0;
 }
 
 /* HAMBURGER-MENU */
 
-.menu {
+.hamburger-container__menu {
   visibility: hidden;
   display: flex;
   flex-direction: column;
@@ -153,7 +150,7 @@ https://github.com/AdreanRodriguez/hamburger */
   right: -100%;
 }
 
-.menu li {
+.hamburger-container__menu-item {
   list-style: none;
   padding: 1rem 2rem;
   text-align: right;
@@ -161,17 +158,23 @@ https://github.com/AdreanRodriguez/hamburger */
   font-size: x-large;
 }
 
-.menu li a {
+.hamburger-container__menu-link {
   text-decoration: none;
   color: var(--text-color-ligtblack);
 }
 
 
 
-
 /* MAIN HOME */
 
+
+.figure__image {
+  width: 100%;
+  height: 100%;
+}
+
 .main-container--home {
+
   margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -191,7 +194,7 @@ https://github.com/AdreanRodriguez/hamburger */
   margin: 1rem 2rem 0rem 2rem;
 }
 
-.article-text-small {
+.article__info {
   margin-top: .5rem;
   line-height: 1.5rem;
 }
@@ -212,9 +215,16 @@ https://github.com/AdreanRodriguez/hamburger */
   flex-direction: column;
 }
 
+.section__facilities-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .section__facilities-list-item {
   font-size: x-large;
   margin: 2rem 0rem .5rem 0rem;
+  list-style: none;
 }
 
 .main-section__info {
@@ -316,99 +326,42 @@ https://github.com/AdreanRodriguez/hamburger */
 
 /* MAIN ORDER */
 
-.main-container--order {
-  display: grid;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.main__section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.section-forrest {
-  display: grid;
-  grid-area: 1 / span 2;
+.section-container {
   background-color: white;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 8px 8px 10px 0px var(--box-shadow-color);
-}
-
-.section__figure-forrest {
-  grid-column: 2 / 2;
-  grid-row: 1 / 2;
-}
-
-.section__image {
-  width: 100%;
-  height: 100%;
-}
-
-.article__text-forrest {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.section__text-small {
-  padding: 1rem;
-}
-
-
-
-.section-waterline {
-  display: grid;
-  grid-area: 2 / 1 / 3 / 3;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: -8px 8px 10px 0px var(--box-shadow-color);
-}
-
-.section__figure-waterline {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.article__text-waterline {
-  grid-column: 2/ 2;
-  grid-row: 2 / 3;
-}
-
-
-
-.section-mountain {
-  display: grid;
-  grid-area: 3 / span 2;
-  background-color: white;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 8px 8px 10px 0px var(--box-shadow-color);
-}
-
-.section__figure-mountain {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
-}
-
-.article__text-mountain {
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
-}
-
-
-.article__text-forrest,
-.article__text-waterline,
-.article__text-mountain {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  margin: 2rem 0rem;
+}
+
+.section-container--reversed {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.section-container__image-container {
+  width: 100%;
+}
+
+.section__image-container--reversed {
+  width: 100%;
+}
+
+.section-container__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.article-container {
+  padding: 2rem;
   text-align: center;
 }
+
 
 .btn {
   width: 20%;
@@ -416,6 +369,7 @@ https://github.com/AdreanRodriguez/hamburger */
   margin: 2rem;
   border-radius: 5px;
   background-color: var(--body-color);
+  cursor: pointer;
 }
 
 /* FOOTER */
@@ -431,29 +385,29 @@ https://github.com/AdreanRodriguez/hamburger */
   border-bottom: 1px solid black;
 }
 
-.footer__image--logo {
+.footer__image {
   margin: 5rem 0rem 5rem 0rem;
   width: 25%;
 }
 
 
-.footer__container {
+.footer-container {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   padding: 5rem;
 }
 
-.footer__section--item {
+.footer-section {
   font-size: 1.25rem;
 }
 
-.footer__text--title {
+.footer-section__title {
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
-.section__unorderd-list--object {
+.footer-section__unorderd-list {
   font-weight: 500;
 }
 
@@ -511,6 +465,8 @@ Iphone 14 pro max */
     margin-top: .5rem;
   }
 
+  /* HAMBURGER */
+
   .burger-btn {
     display: block;
   }
@@ -522,7 +478,7 @@ Iphone 14 pro max */
     display: block;
   }
 
-  .article-text-small {
+  .article__info {
     margin: 2rem 0rem 5rem 0rem;
   }
 
@@ -531,6 +487,10 @@ Iphone 14 pro max */
 
   .main-section__title {
     font-size: x-large;
+  }
+
+  .main-section__info {
+    text-align: center;
   }
 
   .main-section--facilitites {
@@ -554,7 +514,7 @@ Iphone 14 pro max */
     transform-style: unset;
     animation: none;
     animation-direction: unset;
-    margin-top: 3rem;
+    margin-top: 5rem;
     height: 100%;
     width: 100%;
   }
@@ -624,7 +584,7 @@ Iphone 14 pro max */
     margin-bottom: -1rem;
   }
 
-  .footer__container {
+  .footer-container {
     display: none;
   }
 
