@@ -56,20 +56,27 @@
       <section class="booking-form">
         <form class="booking-form__container">
           <fieldset class="booking-form__inner">
-            <label for="destination" class="booking-form__label">Destination:
-              <select name="destination" id="destination" class="booking-form__select">
-                <option value="">Select a location:</option>
-                <option value="forest">Forest</option>
-                <option value="waterline">Waterline</option>
-                <option value="mountain">Mountain</option>
-              </select>
-              <label for="date" class="booking-form__label">From:
-                <input type="date" id="date" class="booking-form__input">
-              </label>
-              <label for="date" class="booking-form__label">To:
-                <input type="date" id="date" class="booking-form__input">
-              </label>
-            </label>
+            <label for="destination" class="booking-form__label">Destination:</label>
+            <select name="destination" id="destination" class="booking-form__select">
+              <option value="">Select a location:</option>
+              <option value="forest">Forest</option>
+              <option value="waterline">Waterline</option>
+              <option value="mountain">Mountain</option>
+            </select>
+            <label for="date" class="booking-form__label">From:</label>
+            <input type="date" id="date" class="booking-form__input">
+
+            <label for="date" class="booking-form__label">To:</label>
+            <input type="date" id="date" class="booking-form__input">
+
+            <section class="booking-form__section-people">
+              <label for="adult" class="booking-form__label">Adult:</label>
+              <input placeholder="How many" type="number" name="adult" id="adult">
+
+              <label for="child" class="booking-form__label">Child:</label>
+              <input placeholder="How many" type="number" name="child" id="child">
+            </section>
+
           </fieldset>
           <input type="submit" value="Submit" class="btn">
         </form>
@@ -92,7 +99,7 @@
         </section>
 
         <section class="section-container section-container--reversed">
-          <figure class="section__image-container--reversed">
+          <figure class="section-container__image-container">
             <img class="section-container__image" src="../assets/img/02-day.jpg" alt="">
           </figure>
           <article class="article-container">
@@ -122,49 +129,48 @@
 
       </section>
 
-
-
     </main>
 
   </div>
 
-  <footer class="footer">
+  <footer class="footer-container">
 
-    <figure class="footer__image-container">
-      <img class="footer-container__image" src="../assets/logo/bonz.ai-logo-black-landscape.png"
+    <figure class="footer-container__image-container">
+      <img class="footer-container__footer-image" src="../assets/logo/bonz.ai-logo-black-landscape.png"
         alt="Logo in black with text that say, bonz.ai">
     </figure>
 
-    <section class="footer-container">
+    <section class="footer-container__section">
 
       <section class="footer-section">
         <h2 class="footer-section__title">About Bonz.Ai</h2>
-        <ul class="footer-section__unorderd-list">
-          <li class="footer__list-item">Work with us</li>
-          <li class="footer__list-item">Our company</li>
-          <li class="footer__list-item">Investors</li>
-          <li class="footer__list-item">Find us</li>
+        <ul class="footer-section__list">
+          <li class="footer-section__list-item">Work with us</li>
+          <li class="footer-section__list-item">Our company</li>
+          <li class="footer-section__list-item">Investors</li>
+          <li class="footer-section__list-item">Find us</li>
         </ul>
       </section>
 
       <section class="footer-section">
         <h2 class="footer-section__title">Costumer service</h2>
-        <ul class="footer-section__unorderd-list">
-          <li class="footer__list-item">FAQ - Frequently Asked Questions</li>
-          <li class="footer__list-item">Website Terms & Conditions</li>
-          <li class="footer__list-item">Privacy Policy</li>
-          <li class="footer__list-item">Cookie Policy</li>
-          <li class="footer__list-item">Contact us</li>
+        <ul class="footer-section__list">
+          <li class="footer-section__list-item">FAQ - Frequently Asked Questions</li>
+          <li class="footer-section__list-item">Website Terms & Conditions</li>
+          <li class="footer-section__list-item">Privacy Policy</li>
+          <li class="footer-section__list-item">Cookie Policy</li>
+          <li class="footer-section__list-item">Contact us</li>
+
         </ul>
       </section>
 
       <section class="footer-section">
         <h2 class="footer-section__title">Help</h2>
-        <ul class="footer-section__unorderd-list">
-          <li class="footer__list-item">Responsible Disclosure</li>
-          <li class="footer__list-item">Customer Support</li>
-          <li class="footer__list-item">Guest Feedback</li>
-          <li class="footer__list-item">Sitemap</li>
+        <ul class="footer-section__list">
+          <li class="footer-section__list-item">Responsible Disclosure</li>
+          <li class="footer-section__list-item">Customer Support</li>
+          <li class="footer-section__list-item">Guest Feedback</li>
+          <li class="footer-section__list-item">Sitemap</li>
         </ul>
       </section>
 

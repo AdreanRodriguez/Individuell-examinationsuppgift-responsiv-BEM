@@ -88,7 +88,7 @@ https://github.com/AdreanRodriguez/hamburger */
 .burger-btn {
   display: flex;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 2.2rem;
   right: 1.2rem;
   width: 1.5rem;
@@ -143,7 +143,7 @@ https://github.com/AdreanRodriguez/hamburger */
   visibility: hidden;
   display: flex;
   flex-direction: column;
-  position: fixed;
+  position: absolute;
   top: 4rem;
   width: 300px;
   transition: 0.3s;
@@ -173,6 +173,13 @@ https://github.com/AdreanRodriguez/hamburger */
   height: 100%;
 }
 
+.figure__image:hover {
+    transform: scale(1.5);
+    transition: all 1s;
+    border-radius: 10px;
+}
+
+
 .main-container--home {
 
   margin-top: 5rem;
@@ -190,13 +197,14 @@ https://github.com/AdreanRodriguez/hamburger */
   grid-column: 2;
 }
 
-.article {
+.article-container-home {
   margin: 1rem 2rem 0rem 2rem;
 }
 
-.article__info {
+.article-container-home__text-info {
   margin-top: .5rem;
   line-height: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* MAIN FACILITIES */
@@ -249,7 +257,7 @@ https://github.com/AdreanRodriguez/hamburger */
   padding-top: 4rem;
 }
 
-.main__rooms--gallery {
+.main-container__gallery {
   width: 300px;
   height: 200px;
   transform-style: preserve-3d;
@@ -259,7 +267,7 @@ https://github.com/AdreanRodriguez/hamburger */
   grid-area: 1 / 3;
 }
 
-.main__rooms--item {
+.main-container__gallery-item {
   box-shadow: 0px 0px 10px 10px var(--body-color);
 }
 
@@ -273,7 +281,7 @@ https://github.com/AdreanRodriguez/hamburger */
   }
 }
 
-.main__rooms--gallery span {
+.main-container__gallery-item {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -282,21 +290,28 @@ https://github.com/AdreanRodriguez/hamburger */
   transform: rotateY(calc(var(--i)*45deg))translateZ(365px);
 }
 
-.main__rooms--gallery span img {
+.main-container__gallery-image {
   position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.section__rooms--text {
+.main-container__gallery-text {
   font-size: x-large;
 }
 
 /* BOOKING-FORM */
 
+.booking-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .booking-form__container {
   background-color: white;
+  /* width: 122%; */
   width: 80%;
   box-shadow: 3px 5px 10px 1px var(--box-shadow-color);
   border-radius: 10px;
@@ -310,19 +325,17 @@ https://github.com/AdreanRodriguez/hamburger */
 .booking-form__inner {
   border: none;
   padding: 1rem;
-  display: flex;
-  justify-content: center;
 }
 
 .booking-form__label {
-  margin: 1rem 2rem 0rem 2rem;
+  margin: 0rem 0rem 0rem 2rem;
 }
 
-.booking-form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.booking-form__section-people {
+  text-align: center;
+  margin-top: 2rem;
 }
+
 
 /* MAIN ORDER */
 
@@ -347,7 +360,7 @@ https://github.com/AdreanRodriguez/hamburger */
   width: 100%;
 }
 
-.section__image-container--reversed {
+.section-container__image-container {
   width: 100%;
 }
 
@@ -363,7 +376,6 @@ https://github.com/AdreanRodriguez/hamburger */
   width: 100%;
 }
 
-
 .btn {
   width: 20%;
   padding: 0.25rem;
@@ -375,24 +387,24 @@ https://github.com/AdreanRodriguez/hamburger */
 
 /* FOOTER */
 
-.footer {
+.footer-container {
   background-color: var(--footer--color);
   margin-top: 5rem;
 }
 
-.footer__image-container {
+.footer-container__image-container {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid black;
 }
 
-.footer-container__image {
+.footer-container__footer-image {
   margin: 5rem 0rem 5rem 0rem;
   width: 25%;
 }
 
 
-.footer-container {
+.footer-container__section {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
@@ -408,11 +420,11 @@ https://github.com/AdreanRodriguez/hamburger */
   margin-bottom: 1.5rem;
 }
 
-.footer-section__unorderd-list {
+.footer-section__list {
   font-weight: 500;
 }
 
-.footer__list-item {
+.footer-section__list-item {
   list-style: none;
   cursor: pointer;
   line-height: 2rem;
@@ -421,12 +433,6 @@ https://github.com/AdreanRodriguez/hamburger */
 .footer__btn {
   display: none;
 }
-
-
-
-
-
-
 
 
 
@@ -479,7 +485,7 @@ Iphone 14 pro max */
     display: block;
   }
 
-  .article__info {
+  .article-container__text-info {
     margin: 2rem 0rem 5rem 0rem;
   }
 
@@ -510,7 +516,7 @@ Iphone 14 pro max */
     display: contents;
   }
 
-  .main__rooms--gallery {
+  .main-container__gallery {
     position: unset;
     transform-style: unset;
     animation: none;
@@ -520,23 +526,23 @@ Iphone 14 pro max */
     width: 100%;
   }
 
-  .main__rooms--item {
+  .main-container__gallery-item {
     box-shadow: none;
   }
 
-  .main__rooms--gallery span {
+  .main-container__gallery span {
     position: unset;
     transform-origin: unset;
     transform-style: unset;
     transform: none;
   }
 
-  .main__rooms--gallery span img {
+  .main-container__gallery span img {
     position: unset;
     object-fit: cover;
   }
 
-  .main__rooms--text {
+  .main-container__gallery-text-container {
     padding: 2rem;
     text-align: center;
   }
@@ -568,6 +574,7 @@ Iphone 14 pro max */
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
   }
 
   .section-container {
@@ -576,16 +583,20 @@ Iphone 14 pro max */
   
   /* FOOTER */
 
-  .footer {
+  .footer-container {
     margin-top: 1rem;
     margin-bottom: -1rem;
   }
 
-  .footer-container {
+  .footer-container__section {
     display: none;
   }
 
-  .footer__image-container {
+  .booking-form__inner {
+    text-align: center;
+  }
+
+  .footer-container__image-container {
     border: 0;
   }
 
